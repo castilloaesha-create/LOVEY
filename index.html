@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    
+    <!-- This script adds the styling framework (Tailwind CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- This is for the custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Here we define the custom colors and fonts you wanted! */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-cursive {
+            font-family: 'Dancing Script', cursive;
+        }
+        .bg-candy-floss { background-color: #F0F9F8; }
+        .bg-cotton-candy { background-color: #FFD3DD; }
+        .bg-bubble-gum { background-color: #F5A2BE; }
+        .bg-mint { background-color: #C6E6E3; }
+        .text-wintergreen { color: #81BFB7; }
+        .border-wintergreen { border-color: #81BFB7; }
+        .hover-bubble-gum:hover { background-color: #F5A2BE; color: white; }
+    </style>
+</head>
+<body class="bg-candy-floss text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="text-center p-10 rounded-lg bg-mint shadow-lg">
+            <!-- EDIT HERE: Change the name to your boyfriend's name! -->
+            <h1 class="font-cursive text-5xl md:text-7xl text-white">Happy Birthday, [Boyfriend's Name]!</h1>
+            <p class="mt-4 text-xl text-white">A special page for a special person.</p>
+        </header>
+
+        <!-- A Special Message Section -->
+        <section class="mt-10 p-8 bg-white rounded-lg shadow-md">
+            <h2 class="font-cursive text-4xl text-wintergreen mb-4">A Message For You</h2>
+            <!-- EDIT HERE: Write your own personal message below -->
+            <p class="text-lg leading-relaxed">
+                Happy birthday to the most amazing person I know! I wanted to do something a little different this year to show you just how much you mean to me. You bring so much joy and laughter into my life, and I'm so grateful for every moment we share. I hope this little website makes you smile. Here's to you and another fantastic year ahead!
+            </p>
+            <p class="text-lg leading-relaxed mt-4">With all my love, <br> [Your Name]</p>
+        </section>
+
+        <!-- Our Memories Gallery -->
+        <section class="mt-10 p-8 bg-white rounded-lg shadow-md">
+            <h2 class="font-cursive text-4xl text-wintergreen mb-6 text-center">Our Memories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                
+                <!-- 
+                    IMAGE EDITING INSTRUCTIONS:
+                    1. After uploading your photos (see instructions file), get the simple filename (e.g., photo1.jpg).
+                    2. Replace the long "https://placehold.co/..." URL in the `src` part below with your photo's filename.
+                    3. The text inside `alt="..."` is a description for the image.
+                -->
+
+                <!-- Image 1 -->
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/FFD3DD/333333?text=Our+Memory+1" alt="A happy memory together" class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+
+                <!-- Image 2 -->
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/C6E6E3/333333?text=Our+Memory+2" alt="Another fun moment" class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+
+                <!-- Image 3 -->
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/F5A2BE/FFFFFF?text=Our+Memory+3" alt="A special day" class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+                 <!-- You can copy and paste the <div>...</div> block to add more photos! -->
+
+            </div>
+        </section>
+
+        <!-- Reasons I Love You Section -->
+        <section class="mt-10 p-8 bg-white rounded-lg shadow-md">
+            <h2 class="font-cursive text-4xl text-wintergreen mb-4">A few reasons why I love you...</h2>
+            <ul class="list-none space-y-3">
+                <!-- EDIT HERE: Change these reasons to your own! -->
+                <li class="flex items-center text-lg p-3 rounded-md bg-cotton-candy">
+                    <svg class="w-6 h-6 mr-3 text-bubble-gum" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                    Your incredible sense of humor.
+                </li>
+                <li class="flex items-center text-lg p-3 rounded-md bg-mint">
+                    <svg class="w-6 h-6 mr-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                    The way you always know how to make me smile.
+                </li>
+                <li class="flex items-center text-lg p-3 rounded-md bg-cotton-candy">
+                    <svg class="w-6 h-6 mr-3 text-bubble-gum" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                    Your kindness and compassion for others.
+                </li>
+                 <!-- You can copy and paste the <li>...</li> lines to add more reasons! -->
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10 p-6 text-wintergreen">
+            <p>Made with ❤️ just for you.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
